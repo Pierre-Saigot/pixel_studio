@@ -1,4 +1,4 @@
-class Tool{
+class Tools{
 	/**
 	 * [constructor description]
 	 * @param  {string} name      [description]
