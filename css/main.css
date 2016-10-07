@@ -1,0 +1,63 @@
+a.brand-logo {
+    font-weight: 300;
+    margin-left: 1%;
+}
+
+div#palette {
+    position: fixed;
+    bottom: 0px;
+    right: 2px;
+}
+
+#palette img {
+    width: 53px;
+    transition: 0.3s;
+}
+
+#palette img:hover {
+    width: 48px;
+    opacity: 0.8;
+}
+
+
+h2.title_loading {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 6em;
+    padding-top: 9%;
+}
+
+.logo_loader{
+    width: 13%;
+}
+
+.block_loader{
+	margin-top: 7%;
+    animation: infinite-spinning 2s infinite;
+}
+
+.none{
+	display: none;
+	visibility: none;
+	width: 0px!important;
+	height: 0px!important;
+}
+
+.loader{
+	width: 100%;
+	display: block;
+	position: fixed;
+	background-color: #0277BD;
+	z-index: 99999;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

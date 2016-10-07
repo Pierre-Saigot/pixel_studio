@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>Pixel Studio</title>
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
-	<link rel="stylesheet" href="css/style.css">
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Pixel Studio</title>
 </head>
 <body>
-	
 
-	<script src="app/main.js"></script>
-	<script src="app/colorclass.js"></script>
-	<script src="app/toolclass.js"></script>
-	<script src="app/palette.js"></script>
+		<section id="loading_screen" class="loader">
+            <h2 class="title_loading">Pixel Studio</h2>
+          <div class="block_loader" align="center">
+            <img class="logo_loader" src="img/paint-brush.png" alt="Logo Pixel Studio">
+          </div>
+        </section>
+
+        <!-- Navbar -->
+        <nav>
+          <div class="nav-wrapper  light-blue darken-3">
+            <a href="#!" class="brand-logo"><i class="material-icons">format_paint</i> Pixel Studio</a>
+          </div>
+        </nav>
+
+        <div id="dessin">
+          <div id="zone_dessin"></div>
+          <!-- Palette de couleur -->
+          <div id="palette">
+            <a href="#" id="color_blue">
+              <img src="img/palette_blue.png" alt="">
+            </a>
+            <a href="#" id="color_pink">
+              <img src="img/palette_pink.png" alt="">
+            </a>
+            <a href="#" id="color_red">
+              <img src="img/palette_red.png" alt="">
+            </a>
+            <a href="#" id="color_yellow">
+              <img src="img/palette_yellow.png" alt="">
+            </a>
+          </div>
+
+        </div>
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/load_page.js"></script>
+		<script src="app/main.js"></script>
+		<script src="app/colorclass.js"></script>
+		<script src="app/toolclass.js"></script>
+		<script src="app/palette.js"></script>
 </body>
 </html>
