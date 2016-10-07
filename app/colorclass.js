@@ -1,4 +1,4 @@
-class Tool{
+class Color{
 	/**
 	 * Represente une couleur de la palette
 	 * @param  {string} name  nom de la couleur
@@ -6,6 +6,13 @@ class Tool{
 	 */
 	constructor(name , color){
 				this.name 		= name;
-				this.color		= color;
+				this.color_rgb		= color;
 			}
+
+	to_string(){
+        return "rgb("+this.color_rgb.join(',')+")";
+    }
 }
+
+
+

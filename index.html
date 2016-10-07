@@ -32,18 +32,7 @@
           <div id="zone_dessin"></div>
           <!-- Palette de couleur -->
           <div id="palette">
-            <a href="#" id="color_blue">
-              <img src="img/palette_blue.png" alt="">
-            </a>
-            <a href="#" id="color_pink">
-              <img src="img/palette_pink.png" alt="">
-            </a>
-            <a href="#" id="color_red">
-              <img src="img/palette_red.png" alt="">
-            </a>
-            <a href="#" id="color_yellow">
-              <img src="img/palette_yellow.png" alt="">
-            </a>
+            <li id="color"></li>
           </div>
 
           <div id="tools" class="z-depth-2">
@@ -74,5 +63,11 @@
 		<script src="app/colorclass.js"></script>
 		<script src="app/toolclass.js"></script>
 		<script src="app/palette.js"></script>
+		<script>
+			$(function(){
+				pixel_studio.init();
+				ready();
+			});
+		</script>
 </body>
-</html>
+</html>	

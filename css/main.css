@@ -28,13 +28,18 @@ div#palette {
     right: 2px;
 }
 
-#palette img {
-    width: 53px;
+#palette li {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 100%;
     transition: 0.3s;
+    cursor: pointer;
+    list-style: none;
 }
 
-#palette img:hover {
-    width: 48px;
+#palette li:hover {
+    padding: 20px;
     opacity: 0.8;
 }
 
