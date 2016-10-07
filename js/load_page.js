@@ -11,5 +11,5 @@ function ready(){
     	$('#loading_screen').addClass('none');
     	$('#loading_screen h2').addClass('none');
     	$('#loading_screen img').addClass('none');
-    }, 28);
+    }, 1800);
 }
