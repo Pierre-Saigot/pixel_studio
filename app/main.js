@@ -12,7 +12,7 @@ var pixel_studio = {
             new Color('Orange', [255,140,0]),
             new Color('Red', [214,32,32])
 		];
-		this.palette.init_colors( colors );
+		this.palette_color.init( colors );
 
 		console.log("Pixel studio is initiated and  ready");
 	}

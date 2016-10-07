@@ -1,4 +1,4 @@
-pixel_studio.palette = {
+pixel_studio.palette_color = {
 
 	colors: [],
 	color_selected: null,
@@ -11,7 +11,7 @@ pixel_studio.palette = {
 						.addClass('selected');
 	},
 
-	init_colors: function( colors ){
+	init: function( colors ){
 
 		this.colors = colors;
 
