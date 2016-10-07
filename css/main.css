@@ -3,6 +3,25 @@ a.brand-logo {
     margin-left: 1%;
 }
 
+div#tools {
+    position: relative;
+    display: block;
+    margin-top: -34%;
+    float: right;
+    background: #0277bd;
+    padding: 20px 10px 20px 20px;
+}
+
+div#tools a{
+    color: #FFF;
+    transition: all  0.3s;  
+    padding: 10px;
+}
+
+div#tools a:hover {
+    opacity: 0.7;
+}
+
 div#palette {
     position: fixed;
     bottom: 0px;
