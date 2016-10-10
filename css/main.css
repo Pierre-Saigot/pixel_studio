@@ -7,10 +7,17 @@ a.brand-logo {
     width: 100%;
 }
 
+#zone_dessin canvas{
+    position: absolute;
+    right:8px;
+    top: 3px;
+    border: 1px solid #aaa;
+}
+
 div#tools {
     position: relative;
     display: block;
-    margin-top: -50%;
+    margin-top: 13%;
     float: right;
     background: #0277bd;
     padding: 20px 10px 20px 20px;

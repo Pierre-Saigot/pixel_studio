@@ -23,7 +23,11 @@ var pixel_studio = {
 		this.palette_tool.init( tools );
 
 		//Canvas
-		this.canvas.init();
+		//
+		var height = $(window).height();
+		var nav_height = $( 'nav' ).height()-3;
+		this.canvas.init('zone_dessin', window.innerWidth, height-=nav_height, 100);
+		$('canvas').css('margin-top', nav_height);
 
 		console.log("Pixel studio is initiated and  ready");
 	}
