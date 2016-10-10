@@ -1,8 +1,10 @@
 $( document ).ready(function() {
-    var height = $( document ).height();
-    var nav_height = $( 'nav' ).height();
-    $('#loading_screen').css('height', height);
-    $('#zone_dessin').css('height', height-=nav_height);
+	setTimeout(function(){
+	    var height = $( document ).height();
+	    /*var nav_height = $( 'nav' ).height();
+	    $('#canvas').css('height', height-=nav_height);*/
+	    $('#loading_screen').css('height', height);
+	}, 100);
 });
 
 

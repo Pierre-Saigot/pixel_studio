@@ -3,27 +3,37 @@ a.brand-logo {
     margin-left: 1%;
 }
 
+#dessin{
+    width: 100%;
+}
+
 div#tools {
     position: relative;
     display: block;
-    margin-top: -34%;
+    margin-top: -50%;
     float: right;
     background: #0277bd;
     padding: 20px 10px 20px 20px;
 }
 
-div#tools a{
+div#tools li{
     color: #FFF;
     padding: 10px;
+    cursor: pointer;
+    list-style: none;
 }
 
-div#tools a i{
+div#tools li i{
     transition: all  0.3s;  
 }
 
-div#tools a:hover i{
+div#tools li:hover i{
     opacity: 0.7;
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.tool_selected i{
+   color: #2E2E2E;
 }
 
 .selected {

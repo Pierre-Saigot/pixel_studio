@@ -29,28 +29,17 @@
         </nav>
 
         <div id="dessin">
-          <div id="zone_dessin"></div>
+          <div id="canvas"></div>
           <!-- Palette de couleur -->
           <div id="palette">
             <li id="color"></li>
           </div>
 
           <div id="tools" class="z-depth-2">
-          	<a href="#" id="tool_pen">
+          	<li>
           		<i class="fa fa-pencil fa-4x" aria-hidden="true"></i>
           		<br>
-          	</a>
-          	<br>
-			<a href="#" id="tool_point">
-				<i class="fa fa-circle-o fa-4x" aria-hidden="true"></i>
-				<br>
-			</a>
-			<br>
-			<a href="#" id="tool_supp">
-				<i class="fa fa-eraser fa-4x" aria-hidden="true"></i>
-				<br>
-			</a>
-
+          	</li>
           </div>
 
         </div>
@@ -62,7 +51,9 @@
 		<script src="app/main.js"></script>
 		<script src="app/colorclass.js"></script>
 		<script src="app/toolclass.js"></script>
+		<script src="app/palette_tool.js"></script>
 		<script src="app/palette_color.js"></script>
+		<script src="app/canvas.js"></script>
 		<script>
 			$(function(){
 				pixel_studio.init();
