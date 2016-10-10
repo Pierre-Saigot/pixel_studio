@@ -1,11 +1,17 @@
 pixel_studio.palette_color = {
 
 	colors: [],
-	color_selected: null,
+	selected: null,
+	bg_color: null,
+
+	get_selected: function(){
+		return this.selected;
+	},
+
 
 	select_color:  function( color ){
 
-		this.color_selected = color;
+		this.selected = color;
 		$('#palette li').removeClass('selected')
 						.eq(color.id)
 						.addClass('selected');
@@ -14,6 +20,8 @@ pixel_studio.palette_color = {
 	init: function( colors ){
 
 		this.colors = colors;
+    	this.bg_color = new Color('white', [255,255,255]);
+		
 
 		//  création de la représentation de la palette
 		

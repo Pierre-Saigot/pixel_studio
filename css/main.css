@@ -12,6 +12,7 @@ a.brand-logo {
     right:8px;
     top: 3px;
     border: 1px solid #aaa;
+    cursor: crosshair;
 }
 
 div#tools {
@@ -84,23 +85,23 @@ h2.title_loading {
 }
 
 .block_loader{
-	margin-top: 7%;
+    margin-top: 7%;
     animation: infinite-spinning 2s infinite;
 }
 
 .none{
-	display: none;
-	visibility: none;
-	width: 0px!important;
-	height: 0px!important;
+    display: none;
+    visibility: none;
+    width: 0px!important;
+    height: 0px!important;
 }
 
 .loader{
-	width: 100%;
-	display: block;
-	position: fixed;
-	background-color: #0277BD;
-	z-index: 99999;
+    width: 100%;
+    display: block;
+    position: fixed;
+    background-color: #0277BD;
+    z-index: 99999;
 }
 
 @keyframes infinite-spinning {
