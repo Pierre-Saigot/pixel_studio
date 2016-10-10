@@ -17,12 +17,6 @@ pixel_studio.canvas = {
 	 * @param  {number} nb_pixel_width nombre de pixel en largeur
 	 */
 	init: function(div_id, width, height, nb_pixel_width){
-		this.div_id 			= div_id;
-		this.width 				= screen.width;
-		this.height 			= screen.height;
-		this.nb_pixel_width  	= nb_pixel_width; 
-
-
-
+		
 	}
 }
