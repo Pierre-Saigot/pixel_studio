@@ -1,3 +1,4 @@
+
 pixel_studio.canvas = {
 
 	screen: {
@@ -13,6 +14,21 @@ pixel_studio.canvas = {
 
 	$canvas: null,
 	context: null,
+
+	/**
+	 * Dessine un pixel sur la zone de dessin
+	 * @param  {number} x     coordonnée horizontale du pixel
+	 * @param  {number} y     coordonnée verticale du pixel
+	 * @param  {Color} color  couleur du pixel : instance de Color
+	 */
+	draw: function(x, y, color){
+
+		let px = (x-1) * this.pixel_dimension,
+			py = (y-1) * this.pixel_dimension;
+
+		this.context.fillStyle = color.to_string();
+		this.context.fillRect(px,py,this.pixel_dimension,this.pixel_dimension);
+	},
 
 	/**
 	 * Préparation de la zone de dessin
@@ -44,8 +60,5 @@ pixel_studio.canvas = {
 
 		this.context = $c[0].getContext("2d");
 
-	},
-
-	draw: function(x, y, color){
 	}
 };

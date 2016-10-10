@@ -45,7 +45,7 @@
 
             let index = $( "#tools li" ).index( this );
             self.select_tool(self.tools[index]);        
-            Materialize.toast('Vous avez selectionné '+self.tools[index].name, 4000);
+            Materialize.toast('Vous avez sélèctionné '+self.tools[index].name, 4000);
         });
 
     }
