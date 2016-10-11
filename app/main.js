@@ -16,9 +16,8 @@ var pixel_studio = {
 
 		//Outlis de dessin 
 		let tools = [
-			new Tool('pencil', 'pencil'),
-			new Tool('circle', 'circle-o'),
-			new Tool('eraser', 'eraser')
+			new Pencil(this.canvas),
+			new Eraser(this.canvas)
 		];
 		this.palette_tool.init( tools );
 

@@ -36,8 +36,9 @@ pixel_studio.canvas = {
      * @param  {number} height         Hauteur maximum du camvas en pixel ecran
      * @param  {number} nb_pixel_width Nombre de pixel en largeur
      */
-    init: function(div_id, width, height, nb_pixel_width){
-        //Calcul du pixel_dimension
+   init: function(div_id, width, height, nb_pixel_width){
+
+        //  Calcul du pixel_dimension
         
         this.pixel_dimension = parseInt(width / nb_pixel_width);
         this.nb_pixel.height = parseInt(height / this.pixel_dimension);
@@ -61,8 +62,15 @@ pixel_studio.canvas = {
 
         // Gestion des évènements
         
-        this.$canvas.on('click', this.on_click);
+        this.$canvas.on('mousedown mouseup mousemove', this.on_mouse_event);
 
+    },
+
+    on_mouse_event: function(mouse_event){
+
+        let tool = pixel_studio.palette_tool.get_selected()
+            type = 'on_'+mouse_event.type;
+        if(tool[type])  tool[type](mouse_event);
     },
 
     /**
@@ -77,18 +85,5 @@ pixel_studio.canvas = {
             x: Math.floor((mouse_event.clientX - offset.left) / this.pixel_dimension)+1,
             y: Math.floor((mouse_event.clientY - offset.top) / this.pixel_dimension)+1
         }; 
-    },
-
-    on_click: function(mouse_event){
-
-        let ps       = pixel_studio,
-            position = ps.canvas.screen_to_canvas(mouse_event),
-            tool     = ps.palette_tool.get_selected(),
-            color    = ps.palette_color.get_selected();
-
-        // @todo
-        let c = (tool.name == 'pencil' || tool.name == 'circle') ? color  : ps.palette_color.bg_color;
-        
-        ps.canvas.draw(position.x, position.y, c);
     }
 };
